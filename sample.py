@@ -40,7 +40,7 @@ if __name__ == '__main__':
     visualizer.create_window(window_name='Dragon Initial Mesh & 10 x Downsampled Pointcloud', width=750, height=750)
 
     # We call add_geometry to add a mesh or point cloud to the visualizer
-    visualizer.add_geometry(drgn_mesh)
+    # visualizer.add_geometry(drgn_mesh)
 
     # Other objects can be created as well - try to comment out the dragon mesh to see sphere more clearly
     # sphere_mesh = o3d.geometry.TriangleMesh.create_sphere(radius=10)
@@ -65,12 +65,12 @@ if __name__ == '__main__':
     radius = 1.5 * avg_dist
 
     """ From point cloud - make the mesh, can take a minute"""
-    """drgn_mesh2 = o3d.geometry.TriangleMesh.create_from_point_cloud_ball_pivoting(
+    drgn_mesh2 = o3d.geometry.TriangleMesh.create_from_point_cloud_ball_pivoting(
         drgn_pcld,
-        o3d.utility.DoubleVector([radius, radius * 2])) """
+        o3d.utility.DoubleVector([radius, radius * 2]))
 
     visualizer.add_geometry(drgn_pcld)
-    # visualizer.add_geometry(drgn_mesh2)
+    visualizer.add_geometry(drgn_mesh2)
 
     # Uncomment the below line to view full movement
     # visualizer.register_animation_callback(rotate_cb)
