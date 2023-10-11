@@ -11,7 +11,7 @@ import numpy as np
 import open3d as o3d
 ```
 
-## Functionality of `open3d`
+## Functionality of `open3d` [[1]](http://www.open3d.org/docs/release/)
 
 Open-3D is a modern library for 3D data processing and is used for supporting rapid development of software that deals with 3D data, with an optimized back-end for parallelization and secured front-end.
 
@@ -86,6 +86,14 @@ On meshes this will return points which may not be the intended result, if a tri
 ```py
   mesh_simple = mesh_in.simplify_quadric_decimation(target_number_of_triangles=<#>)
 ```
-### 
+## History and Choice of Package
 
-This package was
+This package was created in 2015 [[2]](http://www.open3d.org/paper.pdf), and has been in development since then. 
+
+This package was selected as topic because it is important in finite element analysis and for creating 3D assets. The visualization of point cloud information is also used for surveying, drone mapping, geomatics, infrastructure analysis and virtual reality. I worked previously for a survey company where I did data processing on hydrographic data obtained from remote-operated vehicles that would use sonar technology to survey the ocean floor. The .xyz coordinate information could be used to create digital terrain models and engineering charts for the surveyors/clients.
+
+## Learning Takeaways
+
+Learning this library reinforced my understanding of the package managers available in python and how to create virtual environments. It also provided insight into the differences between Python versions. In the case of this library, my newer version of Python was not compatible with the package so there were issues with pip finding the package. I learned more about arrays in Python and how to access values and convert them to arrays in other forms like the ones found in `numpy`. 
+
+I would recommend this package to someone if they were trying to visualize 3-D point data or if they were dealing with huge data sets and wanted to create smaller subsets of the point cloud or decimate a triangular mesh. It is simple to install and is easy to use when in a time crunch for manipulating data and visualizing. For reference, in a previous co-op I was programming with C++ and using VTK for this type of 3-D modelling and it was much more difficult to use. I would gladly keep using this package in the future, since we have just scratched the surface in terms of functionality as well. 
