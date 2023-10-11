@@ -13,7 +13,7 @@ The program also shows how a mesh can be downsampled, which is critical if there
 
 ## Installing the dependencies
 
-In order to install `open3d` the following steps must be performed:
+In order to install `open3d` the following steps must be performed (if Python version > 3.10):
 1.  The conda package manager must be installed by installing `miniconda` from [https://docs.conda.io/projects/miniconda/en/latest/]
 2.  After installing for whichever OS, open up the Anaconda Prompt and enter the following commands to make an open3d python environment
      ```
@@ -25,6 +25,8 @@ In order to install `open3d` the following steps must be performed:
     ```
     python sample.py
     ```
+
+### If Python version is <= 3.10 a simple `pip install open3d` can be performed from the command line
 
 ## Typical inputs and output
 
