@@ -37,7 +37,7 @@ if __name__ == '__main__':
     # create a Visualizer window to hold the 3D object and listen for animation callbacks
     visualizer = o3d.visualization.Visualizer()
     # New window, where we can set the name, the width and height, as well as the position on the screen
-    visualizer.create_window(window_name='Dragon Initial Mesh & 10 x Downsampled Pointcloud', width=750, height=750)
+    visualizer.create_window(window_name='10 x Downsampled Pointcloud and Mesh', width=750, height=750)
 
     # We call add_geometry to add a mesh or point cloud to the visualizer
     # visualizer.add_geometry(drgn_mesh)
