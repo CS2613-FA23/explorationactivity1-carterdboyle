@@ -11,6 +11,8 @@ The program also shows how data of this type can be visualized.
 The sample program is configurable, and can show how a triangular mesh can be generated from an input pointcloud file, namely in the form of a .ply file.
 The program also shows how a mesh can be downsampled, which is critical if there are many points in the pointcloud as the calculations can take a long time.
 
+The data found in the `/data/` folder was found from [artec3d.com](https://www.artec3d.com/3d-models/fantasy-dragon)
+
 ## Installing the dependencies
 
 In order to install `open3d` the following steps must be performed (if Python version > 3.10):
